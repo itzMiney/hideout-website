@@ -9,7 +9,8 @@ __pycache__/
 .env.*
 
 # Site media
-public_html/media/
+public_html/media/images/*
+public_html/media/videos/*
 
 # IDEs and editors
 .vscode/
