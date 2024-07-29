@@ -10,7 +10,7 @@
 
 Welcome to the Hideout SMP Website repository! This repository contains the code and assets for the Hideout SMP network's official website.
 
-![Screenshot](short.hideoutsmp.net/WGeyaT)
+![Screenshot](https://short.hideoutsmp.net/WGeyaT)
 
 [View Live Site](https://www.hideoutsmp.net)
 
