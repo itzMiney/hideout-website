@@ -22,6 +22,11 @@ public_html/media/songs/*
 *.sublime-project
 *.sublime-workspace
 
+#Node.js
+node_modules/
+package-lock.json
+package.json
+
 # MacOS
 .DS_Store
 
