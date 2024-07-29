@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hideout Radio</title>
+    <link rel="stylesheet" href="/static/css/radio.css">
+</head>
+<body>
+<div class="radio-player">
+    <div class="header">
+        <select id="song-select" class="song-select"></select>
+        <div class="title">Hideout Radio</div>
+    </div>
+    <div class="content">
+        <img id="cover-image" class="cover-image" src="/media/images/default-cover.jpg" alt="Cover">
+        <div class="info">
+            <div id="song-title" class="song-title"></div>
+            <div id="song-artist" class="song-artist"></div>
+        </div>
+        <div class="controls">
+            <button id="prev-button" class="control-button">⏮️</button>
+            <button id="play-button" class="control-button">▶️</button>
+            <button id="next-button" class="control-button">⏭️</button>
+        </div>
+        <input type="range" id="progress-bar" class="progress-bar" value="0">
+    </div>
+</div>
+<audio id="audio-player" src=""></audio>
+<script src="/static/js/radio.js"></script>
+</body>
+</html>
