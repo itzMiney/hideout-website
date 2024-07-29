@@ -7,7 +7,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; /* Background color of the page */
+    background-color: #eb3455; /* Background color of the page */
 }
 
 .container {
@@ -30,7 +30,7 @@ body, html {
 }
 
 button {
-    background-color: #7d4ae2;
+    background-color: #272727;
     color: #fff;
     border: none;
     padding: 10px 20px;

@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hideout Radio</title>
+    <title>Radio</title>
     <link rel="stylesheet" href="/static/css/radio.css">
 </head>
 <body>
-<div class="radio-player">
-    <div class="header">
-        <select id="song-select" class="song-select"></select>
-        <div class="title">Hideout Radio</div>
-    </div>
-    <div class="content">
-        <img id="cover-image" class="cover-image" src="/media/images/default-cover.jpg" alt="Cover">
-        <div class="info">
-            <div id="song-title" class="song-title"></div>
-            <div id="song-artist" class="song-artist"></div>
+    <div id="container">
+        <div id="header">
+            <h1 id="title">Hideout Radio</h1>
+            <div id="songSelectContainer">
+                <select id="songSelect">
+                    <!-- Options will be added dynamically by JavaScript -->
+                </select>
+            </div>
         </div>
-        <div class="controls">
-            <button id="prev-button" class="control-button">⏮️</button>
-            <button id="play-button" class="control-button">▶️</button>
-            <button id="next-button" class="control-button">⏭️</button>
+        <div id="radioPlayer">
+            <img id="cover" alt="Cover"> <!-- Hidden or not in use if the cover is the background -->
+            <div id="infoContainer">
+                <strong id="songTitle">Title</strong>
+                <span id="artist">Artist</span>
+                <span id="album">Album</span>
+                <audio id="audioPlayer" controls></audio>
+            </div>
         </div>
-        <input type="range" id="progress-bar" class="progress-bar" value="0">
     </div>
-</div>
-<audio id="audio-player" src=""></audio>
-<script src="/static/js/radio.js"></script>
+    <script type="module" src="/static/js/radio.js"></script>
 </body>
 </html>
