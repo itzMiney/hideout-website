@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>HideoutSMP | Home</title>
+  <meta charset="utf-8">
+  <meta name="description" content="HideoutSMP | Home">
+  <meta name="keywords" content="Minecraft,Server,Gaming,Survival,PvP,Minigames">
+  <meta name="author" content="itzMiney">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/media/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/media/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/media/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-config" content="/media/favicon/browserconfig.xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/static/css/index.css">
+  <link rel="stylesheet" href="/static/css/fonts.css">
+  <link rel="stylesheet" href="/static/css/default.css">
+  <script src="/static/js/server-status.js" defer></script>
+  <script src="/static/js/default.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+</head>
+<body>
+  <div class="navbar-container fixed-top">
+    <div id="navbar" class="container">
+      <p><a href="/"><img src="/media/images/icon.svg" class="logo"></a></p><a href="/" class="wordmark">HideoutSMP</a>
+      <ul>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/team">Team</a></li>
+        <li><a href="/guidelines">Community Guidelines</a></li>
+        <li><a href="/blockparty">Block Party</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="outer-container">
+    <div class="container inner-container">
+      <div class="content">
+        <!-- Main Content -->
+        <div class="landingpage">
+          <div class="landing-content">
+            <h1 class="landingdesc">Welcome to HideoutSMP</h1>
+            <p class="landingdesc">This is the home page of HideoutSMP, a Minecraft server community.<br><br>Dive into an exhilarating Minecraft adventure, on a vibrant, player-driven Minecraft server network where your imagination knows no bounds.<br>Our dynamic world is crafted for survival, PvP battles, and thrilling minigames. Join a thriving community of gamers, participate in epic events, and build your legacy in a world where every block tells a story.</p>
+            <!-- Server Status Widget -->
+            <div class="server-widget">
+              <div class="server-info">
+                <span class="label">IP:</span>
+                <span class="code-snippet" id="serverIP">play.hideoutsmp.net</span> <span class="label">1.20-1.21</span>
+              </div>
+              <div class="server-status">
+                <span class="label">Status:</span> <span id="serverStatus">Loading..</span>&nbsp;&nbsp;&nbsp;<span class="label">Players:</span> <span id="playersOnline">Loading..</span><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="full-width-background">
+          <div class="content">
+              <h1>More than just another SMP Server</h1>
+              <p class="minigames">Although SMP is the main focus we also offer various Minigames and plan on adding more in the future!</p>
+              <div class="gallery">
+                <div class="gallery-item">
+                    <h2>Survival Multiplayer</h2>
+                    <p>Our main focus and biggest Server<br>Create Clans, Towns, Nations and rage war, get jobs, trade, open shops and more!</p>
+                </div>
+                <div class="gallery-item">
+                    <h2>KitPvP</h2>
+                    <p>Test your PvP skills in an arena full of kit madness! You gain money by killing and unlock new kits the more you play!</p>
+                </div>
+                <div class="gallery-item">
+                    <h2>Arcade</h2>
+                    <p>Fun smaller Minigames for parties like Block Party and Spleef! More Arcade Minigames planned in the future!</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <br/><br/><br/><br/><br/><br/><br/>
+        <!-- Cookie Notice -->
+        <div id="cookieNotice" class="cookie-notice">
+          <p>We use cookies to improve your experience on our site. By using our site, you agree to our <a href="cookie-policy" target="_blank">cookie policy</a>.</p>
+          <button id="acceptCookies" class="cookie-button">Accept</button>
+        </div>
+        <!-- Contact Form Popup -->
+        <div id="contactFormPopup" class="contact-form-popup">
+          <div class="contact-form-content">
+            <span id="closeContactForm" class="close-btn material-icons">close</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <p>Email: info@hideoutsmp.net</p>
+          <a href="#" id="openContactForm">Contact Form</a>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <a href="https://youtube.com/@itzMiney">YouTube</a> | <a href="https://twitter.com/@itzMiney">Twitter</a> | <a href="https://twitch.tv/itzminey">Twitch</a>
+        </div>
+        <div class="col-md-4">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/team">Team</a></li>
+            <li><a href="/guidelines">Community Guidelines</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/cookie-policy">Cookie-Policy</a></li>
+            <li><a href="/imprint">Imprint</a></li>
+          </ul>>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>&copy; 2024 HideoutSMP. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

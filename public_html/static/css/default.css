@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 96px; /* Height of the fixed navbar */
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar-container {
+  width: 100%;
+  background-color: #2C2C2C; /* Dark background for a sleek look */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top */
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+a.wordmark {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: 500; /* Slightly lighter weight */
+  font-size: 16px; /* Adjusted font size for a cleaner look */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  border-radius: 4px; /* Rounded corners for a modern touch */
+  text-align: left;
+  position: absolute;
+  margin-left: 70px;
+}
+
+a.wordmark:hover, a.wordmark:focus {
+  color: #F4F4F9; /* Light color for hover */
+  background-color: #4A4A4A; /* Slightly lighter background on hover */
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between; /* Distribute items between edges */
+  align-items: center;
+  padding: 10px 20px; /* Reduced padding for a slimmer navbar */
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the navbar */
+}
+
+#navbar img.logo {
+  height: 40px; /* Adjusted height for a modern look */
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Increased gap for better spacing */
+}
+
+#navbar li {
+  position: relative;
+}
+
+#navbar li a {
+  color: #EDEDED; /* Light color for text */
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: 500; /* Slightly lighter weight */
+  font-size: 16px; /* Adjusted font size for a cleaner look */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  border-radius: 4px; /* Rounded corners for a modern touch */
+}
+
+#navbar li a:hover,
+#navbar li a:focus {
+  color: #F4F4F9; /* Light color for hover */
+  background-color: #4A4A4A; /* Slightly lighter background on hover */
+}
+
+.outer-container {
+  background-color: none; /* Page padding */
+  display: flex;
+  justify-content: center;
+  padding: 25px; /* Padding around the container */
+  background-image: url("/media/images/abstractbg.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.inner-container {
+  background-color: #DCE0E6; /* Page background */
+  max-width: 1200px; /* Maximum width for content */
+  width: 100%;
+  border-radius: 15px;
+}
+
+.content {
+  padding: 32px; /* Padding inside the content area */
+  font-family: 'Mukta', sans-serif;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer h5 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer p, .footer a {
+  color: #bbb;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer .text-center {
+  margin-top: 20px;
+}
+
+/* Cookie Notice Styles */
+.cookie-notice {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: calc(100% - 32px); /* Ensure padding is not cut off */
+  max-width: 600px; /* Optional: Limits the width on larger screens */
+  z-index: 9999; /* Ensure it appears above other content */
+  display: none; /* Hidden by default, will be shown by JS */
+}
+
+.cookie-notice p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.cookie-notice a {
+  color: #7d4ae2;
+  text-decoration: none;
+}
+
+.cookie-notice a:hover {
+  text-decoration: underline;
+}
+
+.cookie-button {
+  background-color: #7d4ae2;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cookie-button:hover {
+  background-color: #5407ed;
+}
+
+/* Contact Form Popup Styles */
+.contact-form-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it appears above other content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form-content {
+  background-color: #fff;
+  padding: 20px 40px; /* Add more padding for better spacing */
+  border-radius: 8px;
+  max-width: 600px; /* Increase max-width for a larger popup */
+  width: 100%;
+  position: relative;
+}
+
+.contact-form-content h2 {
+  margin-top: 0;
+}
+
+.contact-form-content label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-form-content input,
+.contact-form-content textarea {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.contact-form-content textarea {
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+.contact-form-content button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form-content button:hover {
+  background-color: #357abd;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.full-width-background {
+  background-color: #9999ff; /* Set your desired background color */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  padding: 10px 0; /* Vertical padding for spacing */
+  margin-left: calc(-50vw + 50%); /* Extend background to the full viewport width */
+  margin-right: calc(-50vw + 50%); /* Extend background to the full viewport width */
+  position: relative; /* Necessary for stacking context */
+}
+
+.full-width-background .content {
+  max-width: 1100px; /* Constrained content width for smaller screens */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Horizontal padding for content */
+  box-sizing: border-box; /* Include padding in width calculation */
+}

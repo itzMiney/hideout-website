@@ -6,25 +6,51 @@ __pycache__/
 
 # Environment files
 .env
+.env.*
 
-# Django
-*.log
-local_settings.py
-db.sqlite3
-media/
+# Site media
+public_html/media/
 
-# Static files
-staticfiles/
-
-# IDEs
+# IDEs and editors
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 
 # MacOS
 .DS_Store
 
 # Windows
 Thumbs.db
+desktop.ini
 
-#Virtual Enviroment
+# Virtual Environment
 venv/
+.venv/
+
+# Logs and runtime files
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Archives
+*.tar
+*.tgz
+*.zip
+*.gz
+*.bz2
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*~

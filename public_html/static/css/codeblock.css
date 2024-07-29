@@ -1,0 +1,92 @@
+/* Code Block: Ensure no extra margin or padding */
+.code-block {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  overflow: hidden;
+  margin: 0; /* Remove margin */
+  box-sizing: border-box; /* Include padding and border in width and height */
+}
+
+/* Code block content with proper padding inside */
+.code-block code {
+  display: block;
+  padding: 8px; /* Padding inside the code block */
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  white-space: pre; /* Preserve whitespace and line breaks */
+  overflow-x: auto; /* Horizontal scrolling for long lines */
+  overflow-y: auto; /* Vertical scrolling if content exceeds 20 lines */
+  max-height: 300px; /* Optional: Adjust as needed */
+  margin: 0; /* Ensure no extra margin affecting layout */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Top bar within code block */
+.code-block .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Title within the top bar */
+.code-block .top-bar .title {
+  font-weight: bold;
+}
+
+/* Copy button */
+.copy-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.copy-button img {
+  vertical-align: middle;
+  width: 16px; /* Adjust icon size if needed */
+  height: 16px;
+}
+
+.copy-button.hidden {
+  display: none; /* Hide the copy button if not needed */
+}
+
+/* Adjust spacing for code snippets */
+.code-snippet {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.code-snippet .copy-button {
+  display: none; /* Hide copy button for code-snippet */
+}
+
+/* Tooltip style */
+.copy-tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none; /* Prevent mouse interactions */
+  z-index: 1000; /* Ensure it appears on top */
+}
+
+/*
+Add these to the HTML:
+<link rel="stylesheet" href="css/stylesheet.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+<div class="copy-tooltip" id="copyTooltip">Click to copy</div>
+*/
