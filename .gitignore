@@ -11,6 +11,8 @@ __pycache__/
 # Site media
 public_html/media/images/*
 public_html/media/videos/*
+!public_html/media/images/
+!public_html/media/videos/
 
 # IDEs and editors
 .vscode/
